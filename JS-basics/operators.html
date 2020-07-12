@@ -1,9 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <script>
-        // Basic Operators
-        var yearDOB=2020-25;
-        console.log(yearDOB);
-    </script>
+<script>
+  // Basic Operators
+  var yearDOB = 2020 - 25;
+  console.log(yearDOB);
+
+  //Operator precedence
+
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+  var now = 2020;
+  var myDOB = 1996;
+  var age = 25;
+  var isFullAge = now - myDOB >= age; // true 
+  console.log(isFullAge);
+
+
+  //ternary operator
+  age >= 20 ? console.log("beer") : console.log("juice");
+  // switch
+  var job = "teacher";
+  switch (job) {
+    case 'teacher':
+      console.log("teacher");
+      job='doctor';
+      break;
+    case 'doctor':
+      console.log("doctor");
+      break;
+    default: 
+      console.log("default");
+
+  }
+</script>
 
 </html>

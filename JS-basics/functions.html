@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            function calculateAge(birthYear){
+                if(birthYear){
+                    //return 2020-birthYear;
+                    return new Date().getFullYear()-birthYear;
+                }
+                else{
+                    console.log("falsy value of birthYear")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            document.write(calculateAge(1996));
+        </script>
+
+    </body>
+</html>
