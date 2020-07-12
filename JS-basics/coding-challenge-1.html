@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        BMI Mark and John
+    </title>
+</head>
+<script>
+    var massJohn;
+    var massMark;
+    var heightJohn;
+    var heightMark;
+
+    alert("Hello John! Please enter your details");
+    massJohn = prompt("what is your weight in KGs?");
+    heightJohn = prompt("what is your height in meters?")
+    if (massJohn != null && heightJohn != null) {
+        console.log("John's weight:", massJohn);
+        console.log("John's height:", heightJohn);
+        var bmiJohn = massJohn / (heightJohn * heightJohn);
+        console.log("John's BMI:", bmiJohn);
+        alert("Hello Mark!", "Please enter your details");
+        massMark = prompt("what is your weight in KGs?");
+        heightMark = prompt("what is your height in meters?")
+        console.log("Mark's weight:", massMark);
+        console.log("Mark's height:", heightMark);
+        if (massMark != null && heightMark != null) {
+           // var bmiMark = massMark / (heightMark * heightMark);
+            //ES6 version
+            var bmiMark = massMark / (heightMark ** 2);
+            console.log("Mark's BMI:", bmiMark);
+            if (bmiJohn === bmiMark) {
+                console.log("both have same BMI");
+            } else if (bmiJohn > bmiMark) {
+                console.log("John has higher BMI value");
+            }
+            else {
+                console.log("Mark has higher BMI value");
+            }
+
+        }
+
+
+    }
+
+
+
+</script>
+
+</html>
