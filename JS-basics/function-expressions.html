@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+    //function expression
+    var whatDoYouDo = function (job, firstName) {
+        if (job && firstName) {
+            switch (job) {
+                case 'doctor':
+                    return firstName + " is a surgeon and " + job;
+                case 'teacher':
+                    return firstName + " is a dean and " + job;
+                default:
+                    return "you do nothing"
+            }
+        }
+    }
+
+    console.log(whatDoYouDo('teacher','jaideep'))
+</script>
+
+</html>
